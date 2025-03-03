@@ -1,0 +1,5 @@
+.section-button {
+}
+.section-button.active {
+    border: 1px solid blue;
+}
