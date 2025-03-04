@@ -3,59 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- set favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+
+    <!-- stylesheets  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/containers.css" />
+
     <!-- league spartan font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-    <title>Single Page Scroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>The Canopy Collective</title>
   </head>
-  <body class="font-[League_Spartan]">
-    <nav class="sticky top-0 bg-gray-200 p-2 text-center flex gap-2 justify-center">
+  <body class="font-sans">
+    <nav
+      class="fixed top-0 w-full bg-transparent p-2 text-center flex gap-2 justify-center"
+    >
       <a class="section-button" href="#section1">About Us</a>
       <a class="section-button" href="#section2">Our Work</a>
       <a class="section-button" href="#section3">Our Team</a>
       <a class="section-button" href="#section4">Contact</a>
     </nav>
 
-    <section id="section1" class="h-screen flex flex-col justify-center items-center text-lg bg-blue-100 px-4">
-      <h2 class="text-2xl font-bold">About Us</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
-        <img src="image1.jpg" alt="About Us 1" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image2.jpg" alt="About Us 2" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image3.jpg" alt="About Us 3" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-      </div>
+    <section
+      id="section0"
+      class="h-screen flex flex-col justify-center items-center text-lg bg-indigo-100 px-4"
+    >
+      <include src="html/Welcome.html" />
     </section>
 
-    <section id="section2" class="h-screen flex flex-col justify-center items-center text-lg bg-sky-100 px-4">
-      <h2 class="text-2xl font-bold">Our Work</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
-        <img src="image4.jpg" alt="Our Work 1" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image5.jpg" alt="Our Work 2" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image6.jpg" alt="Our Work 3" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-      </div>
+    <section
+      id="section1"
+      class="h-screen flex flex-col justify-center items-center text-lg bg-blue-100 px-4"
+    >
+      <include src="html/AboutUs.html" />
     </section>
 
-    <section id="section3" class="h-screen flex flex-col justify-center items-center text-lg bg-indigo-100 px-4">
-      <h2 class="text-2xl font-bold">Our Team</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
-        <img src="image7.jpg" alt="Our Team 1" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image8.jpg" alt="Our Team 2" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image9.jpg" alt="Our Team 3" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-      </div>
+    <section
+      id="section2"
+      class="h-screen flex flex-col justify-center items-center text-lg bg-sky-100 px-4"
+    >
+      <include src="html/OurWork.html" />
     </section>
 
-    <section id="section4" class="h-screen flex flex-col justify-center items-center text-lg bg-sky-100 px-4">
-      <h2 class="text-2xl font-bold">Contact</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
-        <img src="image10.jpg" alt="Contact 1" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image11.jpg" alt="Contact 2" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-        <img src="image12.jpg" alt="Contact 3" class="w-full max-w-xs sm:w-48 h-36 object-cover rounded-lg" />
-      </div>
+    <section
+      id="section3"
+      class="h-screen flex flex-col justify-center items-center text-lg bg-indigo-100 px-4"
+    >
+      <include src="html/OurTeam.html" />
     </section>
 
-    <script src="js/script.js"></script>
+    <section
+      id="section4"
+      class="h-screen flex flex-col justify-center items-center text-lg bg-sky-100 px-4"
+    >
+      <include src="html/Contact.html" />
+    </section>
+
+    <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/includeHtml.js"></script>
   </body>
 </html>

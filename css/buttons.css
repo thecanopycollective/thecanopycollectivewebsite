@@ -1,5 +1,26 @@
-.section-button {
+/* .section-button {
 }
 .section-button.active {
+    }
+    
+    */
+
+.section-button {
+  transition: all 0.3s;
+  margin: 0.25rem 0.5rem;
+  text-decoration: underline 4px solid transparent;
+  width: 5rem;
+  /* border: 1px solid black; */
+}
+
+/* .section-button:hover:not(.active) {
+  font-weight: bold;
+  border-bottom: 1px solid orange;
+} */
+
+.section-button.active {
   text-decoration: underline 4px solid orange;
+  font-weight: bold;
+  color: var(--color-selected);
+  text-decoration-color: orange;
 }
