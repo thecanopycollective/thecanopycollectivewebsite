@@ -1,5 +1,5 @@
 .section-button {
 }
 .section-button.active {
-    border: 1px solid blue;
+    text-decoration: underline 4px solid orange;
 }
